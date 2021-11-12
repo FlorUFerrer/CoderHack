@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="usuarios.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <title>Registro</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="images/logoMakeSense.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-align-justify"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" style="color: white">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" style="color: white">¿Qué es el Hold Up?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agenda.html" style="color: white">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inicioSesion.html" style="color: white">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item registrateGratis">
+              <a class="nav-link" href="#" style="color: white">Regístrate gratis</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mainRegistro">
+    <div class="registroEmprendedor">
+      <div class="registroBaner">
+        <h2>Bienvenidx al hold-up</h2>
+        <p>
+          Es el momento de colaborar con cientos de ciudadanxs con brillantes
+          ideas para solucionar el reto de tu emprendimiento y generar impacto
+          juntxs.
+        </p>
+      </div>
+      <form class="registroForm" action="">
+        <div class="registroDatos">
+          <!-- nombre del emprendedor -->
+          <label for="nombre">Nombre del representante</label>
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre" id="nombreEmprendedor" required />
+
+          <!-- correo del emprendedor -->
+          <label for="correo">Correo electrónico de un integrante</label>
+          <input type="email" name="correo" id="correoEmprendedor" placeholder="Ingresa un correo" required />
+
+          <!-- logo del emprendimiento -->
+          <img id="imgSubir" />
+          <label for="logo">Sube tu logo</label>
+          <input class="p-0" type="file" name="logo" id="logoEmprendedor" accept=".jpg, .png, .jpeg, .vsg" />
+
+          <label for="checkbox">¿Te gustaría recibir un taller en vivo que facilite un voluntario
+            para resolver tu reto?</label>
+
+          <input type="checkbox" name="checkbox" id="checkboxEmprendedor" />
+        </div>
+        <div class="registroEmprendimiento">
+          <h4>
+            Déjate guiar por nuestras preguntas para que identifiques de la
+            mejor manera el reto final con el que recibirás apoyo:
+          </h4>
+          <ol class="ps-3">
+            <li>¿Cuál es el mayor reto que vive hoy tu emprendimiento?</li>
+            <li>
+              ¿Por qué crees que tienes este reto?¿Hay alguna otra causante
+              del reto?
+            </li>
+            <li>
+              ¿Quién es el usuario que se ve más afectado por tu
+              reto?(Personas de tu equipo, tus beneficiarios, proveedor,
+              etc.?)
+            </li>
+          </ol>
+          <p class="mainRegistro__p">
+            Después de estas preguntas de reflexión, estamos listxs para
+            encontrar el reto principal que quiere compartir con el público
+            para que te apoyen a resolver:
+          </p>
+
+          <p>
+            Redacta aquí tu nuevo reto, sé lo más específico posible. Recuerda
+            seleccionar la categoria para que te encuentren más fácil
+          </p>
+          <input class="mainRegistro__inputText" type="text" name="" id="retoEmprendedor">
+
+          <select name="categorias" id="categoriaEmprendedor">
+            <option value="AguaUrbana">Agua Urbana</option>
+            <option value="Movilidad">Movilidad</option>
+            <option value="EnergíasLimpias">Energías Limpias</option>
+            <option value="DiseñoUrbano">Diseño Urbano</option>
+            <option value="AlimentacionSustentable">
+              Alimentación Sustentable
+            </option>
+            <option value="ConsumoResponsable">Consumo Responsable</option>
+            <option value="TejidoSocial">Tejido Social</option>
+          </select>
+
+          <input class="mainRegistro__inputEnviar" type="button" id="registrarEmprendedor" value="Enviar">
+
+        </div>
+
+      </form>
+    </div>
+
+
+    <a name="ciudadano"></a>
+    <div class="cardLinea">
+      <div class="cardEmprendimientos">
+        <div class="buscador">
+          <form class="d-flex">
+            <input class="form-control formTamaño card-filter" type="search" name="buscador" id="search"
+              placeholder="Buscar..." aria-label="Search">
+          </form>
+          <div class="listaCategorias">
+            <ul>
+              <p>No sabes que categoria elegir, te dejamos algunas propuestas</p>
+              <li><img class="imgCategoria" src="./images/AGUAURBANA.png" alt=""> Agua urbana</li>
+              <li><img class="imgCategoria" src="./images/MOVILIDAD.png" alt="">Movilidad</li>
+              <li><img class="imgCategoria" src="./images/ENERGIASLIMPIAS.png" alt="">Energias Limpias</li>
+              <li><img class="imgCategoria" src="./images/DISEÑOURBANO.png" alt="">Diseño Urbano</li>
+              <li><img class="imgCategoria" src="./images/ALIMENTACIONSUSTENTABLE.png" alt="">Alimentacion sustentable
+              </li>
+              <li><img class="imgCategoria" src="./images/CONSUMORESPONSABLE.png" alt="">Consumo Responsable</li>
+              <li><img class="imgCategoria" src="./images/TEJIDOSOCIAL.png" alt="">Tejido Social</li>
+            </ul>
+            <img src="./images/personasTrabajando.png" alt="">
+          </div>
+        </div>
+
+
+
+        <div class="cardEmprendimiento"></div>
+
+
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <!--Principio de footer-->
+  <footer class="footer">
+    <div class="container-fluid bottom_border px-5">
+      <div class="row justify-content-around">
+        <div class="col-sm-4 col-lg-3">
+          <h5 class="headin5_amrc col_white_amrc pt2">Encuentranos en</h5>
+
+          <p class="mb10">
+            <ion-icon name="location"></ion-icon>
+            México
+          </p>
+          <p><i class="fa fa-location-arrow"></i> calle siempre viva 742</p>
+          <p><i class="fa fa-phone"></i> +91-999999999</p>
+          <p><i class="fa fa fa-envelope"></i> info@example.com</p>
+        </div>
+
+        <div class="midColumn col-sm-4 col-lg-2">
+          <h5 class="headin5_amrc col_white_amrc pt2">Conocenos</h5>
+
+          <ul class="footer_ul_amrc">
+            <li><a href="https://www.instagram.com/makesensemx/?hl=es-la">Fotos</a></li>
+            <li><a href="https://www.youtube.com/channel/UC3_bOquIY7-gtnA46w9SjhA">Videos</a></li>
+
+            <li><a href="http://mexico.makesense.org/impacto-2020/">Impacto</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-4 col-lg-2">
+          <h5 class="headin5_amrc col_white_amrc pt2">Links</h5>
+
+          <ul class="footer_ul_amrc">
+            <li><a href="">Infromación</a></li>
+            <li><a href="">Voluntariado</a></li>
+            <li><a href="">Quienes somos</a></li>
+            <li><a href="">Donde estamos</a></li>
+            <li><a href="">Mision</a></li>
+            <li><a href="">Vision</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="foote_bottom_ul_amrc">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">¿Qué es el Hold Up?</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="index.html">Iniciar Sesión</a></li>
+        <li><a href="emprendedor.html">Regístrate gratis</a></li>
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center">
+        Copyright @2021 | Diseñado por <a href="#">Equipo 4 Coder-Hack</a>
+      </p>
+
+      <ul class="social_footer_ul">
+        <li>
+          <a href="https://www.facebook.com/makesenseperu/?brand_redir=265752777272638"><i
+              class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/makesensemexico"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/makesense-mx/"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/makesensemx/?hl=es-la"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UC3_bOquIY7-gtnA46w9SjhA"><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+      <!--social_footer_ul ends here-->
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="./usuarios.js"></script>
+</body>
+
+</html>
